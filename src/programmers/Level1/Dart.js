@@ -7,7 +7,7 @@ function solution(dartResult) {
   
   for (let i = 0; i < dartResult.length; i++) {
     if (dartResult[i] >= 0 && dartResult[i] <= 9) { //숫자일 경우
-      if (dartResult[i] == 1 && dartResult[i + 1] == 0) { //얕은 비교 주의, 10일 경우 10으로 하고 0을 패스하기 위해 i++
+      if (dartResult[i] === 1 && dartResult[i + 1] === 0) { //얕은 비교 주의, 10일 경우 10으로 하고 0을 패스하기 위해 i++
         tmp = 10;
         i++;
       } else { // 10이 아닐 경우 그대로 temp에 넣어줌.
